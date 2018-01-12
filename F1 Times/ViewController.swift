@@ -39,8 +39,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         interstitial = createAndLoadInterstitial()
         
         let request = GADRequest()
-      
-        let hello = "hello"
         
         bannerView.adUnitID = "ca-app-pub-5657362465242162/6254459968"
         
