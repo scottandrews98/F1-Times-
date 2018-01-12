@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KdD-5g-e0b">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="501"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O1k-4h-sFH">
                                     <size key="itemSize" width="100" height="70"/>
@@ -91,9 +91,16 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="SwX-eY-eM4"/>
                                 </connections>
                             </collectionView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-C6-9Ru">
+                                <rect key="frame" x="0.0" y="502" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="PhG-t0-R9V"/>
+                                    <tabBarItem systemItem="more" id="Uc2-IH-a7n"/>
+                                </items>
+                            </tabBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLe-Ak-ubo" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="501" width="375" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="452" width="375" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bsM-8c-hIy"/>
                                 </constraints>
@@ -101,11 +108,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jLe-Ak-ubo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="17b-eR-JLQ"/>
                             <constraint firstItem="KdD-5g-e0b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9sD-Sc-N0w"/>
                             <constraint firstItem="jLe-Ak-ubo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DcF-dH-jPf"/>
+                            <constraint firstItem="hwK-C6-9Ru" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ezu-X8-dPW"/>
                             <constraint firstItem="KdD-5g-e0b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GLX-R1-T7h"/>
+                            <constraint firstItem="hwK-C6-9Ru" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lel-oa-tkm"/>
                             <constraint firstItem="jLe-Ak-ubo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qsa-HK-5nZ"/>
+                            <constraint firstItem="hwK-C6-9Ru" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RM1-pb-9r7"/>
+                            <constraint firstItem="hwK-C6-9Ru" firstAttribute="top" secondItem="jLe-Ak-ubo" secondAttribute="bottom" id="XC6-sf-Ph7"/>
                             <constraint firstItem="KdD-5g-e0b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YrC-1I-5fa"/>
                             <constraint firstItem="jLe-Ak-ubo" firstAttribute="top" secondItem="KdD-5g-e0b" secondAttribute="bottom" id="cJL-Ey-QKC"/>
                         </constraints>
